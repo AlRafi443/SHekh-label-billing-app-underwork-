@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Analysis - Shekh Label & Accessories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+    <header class="bg-gray-800 text-white p-4 text-center">
+        <h1 class="text-green-300 font-bold text-3xl mb-4">Shekh Label & Accessories</h1>
+        <nav class="flex justify-center flex-wrap gap-2">
+            <a href="customers.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Customers</a>
+            <a href="invoices.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Invoices</a>
+            <a href="payments.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Payments</a>
+            <a href="reports.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Reports</a>
+            <a href="sales-analysis.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Sales Analysis</a>
+            <button id="clear-btn" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Clear Data</button>
+        </nav>
+    </header>
+    <main class="p-4 md:p-8 max-w-7xl mx-auto">
+        <section class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Sales Analysis</h2>
+            <div class="flex space-x-2 mb-4">
+                <button id="daily-btn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Daily</button>
+                <button id="weekly-btn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">7 Days</button>
+                <button id="monthly-btn" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Monthly</button>
+            </div>
+            <div id="sales-analysis-content" class="space-y-2">
+                <!-- Analysis content will be populated here -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

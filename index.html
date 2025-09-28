@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shekh Label & Accessories</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="login-section" class="flex justify-center items-center min-h-screen bg-gray-800">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-80 md:w-96 text-center">
+            <h2 class="mb-4 text-green-300 font-bold text-2xl">Login to Shekh Label & Accessories</h2>
+            <form id="login-form" class="space-y-4">
+                <input type="text" id="username" placeholder="Username" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                <div id="username-error" class="bg-red-100 text-red-800 border border-red-300 p-2 rounded hidden"></div>
+                <input type="password" id="password" placeholder="Password" class="w-full p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                <div id="password-error" class="bg-red-100 text-red-800 border border-red-300 p-2 rounded hidden"></div>
+                <button type="submit" class="bg-blue-500 text-white p-2 rounded w-full hover:bg-blue-600 transition">Login</button>
+            </form>
+        </div>
+    </div>
+    <header id="main-header" class="hidden bg-gray-800 text-white p-4 text-center">
+        <h1 class="text-green-300 font-bold text-3xl mb-4">Shekh Label & Accessories</h1>
+        <nav class="flex justify-center flex-wrap gap-2">
+            <a href="customers.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Customers</a>
+            <a href="invoices.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Invoices</a>
+            <a href="payments.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Payments</a>
+            <a href="reports.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Reports</a>
+            <a href="sales-analysis.html" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">Sales Analysis</a>
+            <button id="clear-btn" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Clear Data</button>
+        </nav>
+    </header>
+
+    <script src="script.js"></script>
+</body>
+</html>
